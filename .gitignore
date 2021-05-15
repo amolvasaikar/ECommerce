@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Skinet/Skinet.API/bin/Debug/netcoreapp3.1
+/Skinet/.vs/Skinet/v16
+/Skinet/Skinet.API/obj
