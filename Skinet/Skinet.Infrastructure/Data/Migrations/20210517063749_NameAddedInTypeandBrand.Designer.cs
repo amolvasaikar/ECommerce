@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Skinet.Infrastructure.Data;
 
 namespace Skinet.Infrastructure.Data.Migrations
 {
     [DbContext(typeof(StoreContext))]
-    partial class StoreContextModelSnapshot : ModelSnapshot
+    [Migration("20210517063749_NameAddedInTypeandBrand")]
+    partial class NameAddedInTypeandBrand
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -27,8 +29,8 @@ namespace Skinet.Infrastructure.Data.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasColumnType("nvarchar(500)")
-                        .HasMaxLength(500);
+                        .HasColumnType("nvarchar(180)")
+                        .HasMaxLength(180);
 
                     b.Property<string>("Name")
                         .IsRequired()

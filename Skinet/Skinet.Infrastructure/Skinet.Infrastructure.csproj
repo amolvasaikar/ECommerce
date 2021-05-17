@@ -10,4 +10,8 @@
     <ProjectReference Include="..\Skinet.Library\Skinet.Library.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Data\Migrations" />
+  </ItemGroup>
+
 </Project>
